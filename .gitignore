@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Kubernetes specific
+*.kubeconfig
+kubeconfig.yaml
+
+# Prometheus data
+prometheus-data/
+alertmanager-data/
+
+# Docker images
+*.tar
+
