@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sample
+      app: sample-app
   template:
     metadata:
       labels:
-        app: sample
+        app: sample-app
     spec:
       containers:
       - name: sample
-        image: sample-app
+        image: sample-app:1.0
         imagePullPolicy: Never
         ports:
         - containerPort: 5000
